@@ -1,0 +1,1292 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom scrollbar styles */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #f04a29;
+    border-radius: 10px;
+}
+
+body,
+body:focus,
+body:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+/* ================================================ */
+
+/* Navbar Container Styles */
+.Navbar-Container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+/* Logo - Left side */
+.Logo {
+    flex: 0 0 auto;
+}
+
+.Logo h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Navbar Menu - Center */
+.Navbar-Menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Menu {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    margin: 100px auto;
+}
+
+.Menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0px;
+    background-color: #FF5330;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.Menu li a:hover::after {
+    transform: scaleX(1);
+}
+
+.Menu li a:hover {
+    color: #FF5330;
+}
+
+/* Right Side - Cart (desktop) */
+.Right-Side {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 45px;
+}
+
+.Cart {
+    display: flex;
+    align-items: center;
+}
+
+.Cart a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Cart a img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Mobile Menu Button - hidden on desktop */
+.Mobile-Menu-Btn {
+    display: none;
+}
+
+/* Mobile Dropdown - hidden on desktop */
+.Mobile-Dropdown {
+    display: none;
+}
+
+/* ================================================ */
+
+/* Home Section Styles */
+.Home-Section {
+    background-color: #FF603E;
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Hero Container - Flexbox for layout */
+.Home-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    gap: 30px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Hero Content - Left Side (Text) */
+.Hero-Content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Slogan Container - with box styling */
+.Slogan-Container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Slogan Circle */
+.Slogan-Circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #FF5330;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Slogan */
+.Slogan {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Hero-Title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.Hero-Description {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Button Container - Desktop (Horizontal) */
+.Button-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Hero Button */
+.Hero-Button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    color: #FF603E;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Hero-Button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Button Icon */
+.Hero-Button-Icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.Hero-Button:hover .Hero-Button-Icon {
+    transform: translateX(4px);
+}
+
+/* Watch Video Button - Same style as Hero Button */
+.Watch-Video-Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    background-color: #FF603E;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Watch-Video-Button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Watch-Icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.Watch-Video-Button:hover .Watch-Icon {
+    transform: scale(1.1);
+}
+
+/* Info Box Styles - Desktop */
+.Info-Box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.Info-Box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Info-Box .box h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.Info-Box .box p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Vertical Separator Line - Desktop */
+.Info-Box>span {
+    display: inline-block !important;
+    width: 2px;
+    height: 50px;
+    background-color: #ffffff;
+    align-self: center;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+/* Hero Image - Right Side (Shoe) */
+.Hero-Image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Hero-Image img {
+    margin-top: 40px;
+    width: 510px;
+    height: 510px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ================================================ */
+
+/* About Section Styles */
+.About-Section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.About-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 50px;
+    gap: 60px;
+}
+
+/* About Image - Left Side (Muri Record Holder) */
+.About-Image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.About-Image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* About Overlay Boxes - Top Left */
+.About-Overlay-Box1 {
+    position: absolute;
+    top: -23px;
+    left: -30px;
+}
+
+.Overlay-TextWrapper1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #012B7F;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Overlay-Text-Box11 {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.Overlay-Text-Box22 {
+    margin-top: -5px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* About Overlay Box 2 - Bottom Right */
+.About-Overlay-Box2 {
+    position: absolute;
+    bottom: -30px;
+    right: -27px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Overlay-Icon-Box {
+    width: 50px;
+    height: 50px;
+    background-color: #FFEDE9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Overlay-Icon-Box svg {
+    width: 27px;
+    height: 27px;
+    color: #FF5330;
+}
+
+.Overlay-TextWrapper2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Overlay-Text-Box33 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.Overlay-Text-Box44 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555555;
+    line-height: 1.2;
+}
+
+/* About Content - Right Side (Text) */
+.About-Content {
+    flex: 1;
+    width: 50%;
+    text-align: left;
+}
+
+.About-Title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5330;
+    margin: 0 0 15px 0;
+}
+
+.About-Subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 25px 0;
+    line-height: 1.2;
+}
+
+.About-Description {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* About Features Grid */
+.About-Features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Feature-Item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Feature-Icon {
+    padding: 5px 5px;
+    background-color: #FF5330;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Feature-Icon svg {
+    width: 13px;
+    height: 13px;
+    color: #ffffff;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Feature-Text {
+    font-size: 15px;
+    color: #555555;
+    font-weight: 500;
+}
+
+/* ================================================ */
+
+/* Developer Credit - Bottom Right Fixed */
+.Dev-Credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Dev-Name {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Dev-Text {
+    color: #FF5330;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ================================================ */
+
+@media screen and (max-width: 318px) {
+    body>* {
+        display: none !important;
+    }
+
+    body::before {
+        content: "Maaf, ukuran layar terlalu kecil untuk menampilkan website ini. Silakan akses menggunakan perangkat dengan layar yang lebih besar.";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #FF5330;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* Responsive Styles - Mobile */
+@media screen and (max-width: 767px) {
+
+    /* Navbar Container */
+    .Navbar-Container {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Logo - Left side */
+    .Logo h1 {
+        font-size: 20px;
+    }
+
+    /* Hide desktop menu */
+    .Navbar-Menu {
+        display: none;
+    }
+
+    /* Right Side - Cart + Hamburger */
+    .Right-Side {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Cart a img {
+        width: 24px;
+    }
+
+    /* Mobile Menu Button - visible on mobile */
+    .Mobile-Menu-Btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+
+    .Mobile-Menu-Btn svg {
+        width: 26px;
+        height: 26px;
+        color: #000000;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .Mobile-Menu-Btn svg:hover {
+        color: #FF5330;
+    }
+
+    .Mobile-Menu-Btn svg:active {
+        color: #FF5330;
+    }
+
+    .Mobile-Menu-Btn .close-icon {
+        display: none;
+    }
+
+    .Mobile-Menu-Btn.active .menu-icon {
+        display: none;
+    }
+
+    .Mobile-Menu-Btn.active .close-icon {
+        display: block;
+    }
+
+    /* Mobile Dropdown Menu */
+    .Mobile-Dropdown {
+        display: none;
+        background-color: #ffffff;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        z-index: 2000;
+    }
+
+    .Mobile-Dropdown.active {
+        display: block;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .Mobile-Dropdown.closing {
+        animation: slideUp 0.3s ease-out forwards;
+    }
+
+    .Mobile-Menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Mobile-Menu li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .Mobile-Menu li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .Right-Side {
+        margin-right: 15px;
+    }
+
+    .Mobile-Menu li a:hover {
+        color: #FF5330;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    }
+
+    /* Hero Section - Mobile Styles (Vertical Layout) */
+    .Home-Section {
+        padding-top: 60px;
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
+    .Home-Container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 30px;
+        text-align: center;
+        height: auto;
+    }
+
+    .Hero-Content {
+        text-align: center;
+        max-width: 100%;
+        order: 1;
+    }
+
+    /* Slogan Container */
+    .Slogan-Container {
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 9px;
+        margin-bottom: 30px;
+    }
+
+    .Slogan-Circle {
+        width: 7px;
+        height: 7px;
+    }
+
+    .Slogan {
+        font-size: 10.7px;
+    }
+
+    .Hero-Title {
+        font-size: 32px;
+    }
+
+    .Hero-Description {
+        font-size: 17px;
+    }
+
+    /* Button Container - Mobile (Vertical Layout) */
+    .Button-Container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .Hero-Button,
+    .Watch-Video-Button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 30px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .Hero-Image {
+        order: 2;
+        width: 100%;
+    }
+
+    .Hero-Image img {
+        max-height: 280px;
+        margin-top: 0;
+    }
+
+    /* Info Box - Mobile Styles */
+    .Info-Box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 35px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .Info-Box .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex: 1;
+    }
+
+    .Info-Box .box h1 {
+        font-size: 30px;
+        margin: 0;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .Info-Box .box p {
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .Info-Box span {
+        display: inline-block;
+        width: 2px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+        align-self: center;
+        flex-shrink: 0;
+    }
+
+    .Hero-Image {
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+
+    /* About Section - Mobile Styles (Vertical Layout) */
+    .About-Section {
+        padding-top: 60px;
+    }
+
+    .About-Container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 70px;
+    }
+
+    .About-Image {
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-Image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .About-Overlay-Box1 {
+        top: -15px;
+        left: -15px;
+    }
+
+    .Overlay-TextWrapper1 {
+        padding: 12px 15px;
+    }
+
+    .Overlay-Text-Box11 {
+        font-size: 12px;
+    }
+
+    .Overlay-Text-Box22 {
+        font-size: 22px;
+    }
+
+    .About-Overlay-Box2 {
+        bottom: -20px;
+        right: -15px;
+        padding: 15px;
+    }
+
+    .Overlay-Icon-Box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Overlay-Icon-Box svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .Overlay-Text-Box33 {
+        font-size: 22px;
+    }
+
+    .Overlay-Text-Box44 {
+        font-size: 11px;
+    }
+
+    .About-Content {
+        width: 100%;
+        order: 2;
+        text-align: left;
+    }
+
+    .About-Title {
+        font-size: 16px;
+    }
+
+    .About-Subtitle {
+        font-size: 33px;
+    }
+
+    .About-Description {
+        font-size: 16px;
+    }
+
+    .About-Features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .Feature-Text {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Styles - Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Navbar Container - Tablet Style */
+    .Navbar-Container {
+        height: 70px;
+        padding: 0 30px;
+    }
+
+    /* Logo - Left side - Tablet Style */
+    .Logo h1 {
+        font-size: 24px;
+    }
+
+    /* Show desktop menu - Tablet Style */
+    .Navbar-Menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Menu items - Tablet Style */
+    .Menu {
+        gap: 20px;
+    }
+
+    .Menu li a {
+        font-size: 14px;
+    }
+
+    /* Right Side - Cart only */
+    .Right-Side {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-right: 45px;
+    }
+
+    .Cart a img {
+        width: 25px;
+    }
+
+    /* Hide Mobile Menu Button - Tablet Style */
+    .Mobile-Menu-Btn {
+        display: none;
+    }
+
+    /* Hide Mobile Dropdown */
+    .Mobile-Dropdown {
+        display: none;
+    }
+
+    /* Hero Section - Tablet Styles (Vertical Layout) */
+    .Home-Section {
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
+    /* Hero Container - Tablet Styles */
+    .Home-Container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 30px;
+        text-align: center;
+        height: auto;
+        max-width: 550px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .Hero-Content {
+        text-align: center;
+        max-width: 100%;
+        order: 1;
+    }
+
+    /* Slogan Container - center on tablet */
+    .Slogan-Container {
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 14px;
+        margin-bottom: 30px;
+    }
+
+    .Slogan-Circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .Slogan {
+        font-size: 13px;
+    }
+
+    .Hero-Title {
+        font-size: 48px;
+    }
+
+    .Hero-Description {
+        font-size: 20px;
+    }
+
+    /* Button Container - Tablet (Horizontal Layout) */
+    .Button-Container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Hero-Button,
+    .Watch-Video-Button {
+        display: inline-flex;
+        justify-content: center;
+        width: auto;
+        padding: 15px 25px;
+        font-size: 16px;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    .Hero-Image {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Hero-Image img {
+        max-height: 450px;
+        margin-top: 0;
+    }
+
+    /* Info Box - Tablet Styles (Full Width) */
+    .Info-Box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 35px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .Info-Box .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex: 1;
+    }
+
+    .Info-Box .box h1 {
+        font-size: 33px;
+        margin: 0;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .Info-Box .box p {
+        font-size: 13px;
+        margin: 0;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .Info-Box span {
+        display: inline-block;
+        width: 2px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+        align-self: center;
+        flex-shrink: 0;
+    }
+
+    .Hero-Image {
+        margin-top: 40px;
+    }
+
+    /* About Section - Tablet Styles (Vertical Layout) */
+    .About-Section {
+        padding-top: 60px;
+    }
+
+    .About-Container {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 70px;
+    }
+
+    .About-Image {
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-Image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .About-Overlay-Box1 {
+        top: -20px;
+        left: -20px;
+    }
+
+    .Overlay-TextWrapper1 {
+        padding: 15px 18px;
+    }
+
+    .Overlay-Text-Box11 {
+        font-size: 14px;
+    }
+
+    .Overlay-Text-Box22 {
+        font-size: 26px;
+    }
+
+    .About-Overlay-Box2 {
+        bottom: -25px;
+        right: -20px;
+        padding: 18px;
+    }
+
+    .Overlay-Icon-Box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Overlay-Icon-Box svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .Overlay-Text-Box33 {
+        font-size: 25px;
+    }
+
+    .Overlay-Text-Box44 {
+        font-size: 12px;
+    }
+
+    .About-Content {
+        width: 100%;
+        order: 2;
+        text-align: left;
+    }
+
+    .About-Title {
+        font-size: 17px;
+    }
+
+    .About-Subtitle {
+        font-size: 35px;
+    }
+
+    .About-Description {
+        font-size: 17px;
+    }
+
+    .About-Features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .Feature-Text {
+        font-size: 14px;
+    }
+}
