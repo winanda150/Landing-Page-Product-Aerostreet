@@ -1,4 +1,4 @@
-# 👟 Aerostreet - Now Everyone Can Buy a Good Shoes
+## 👟 Aerostreet - Now Everyone Can Buy a Good Shoes
 
 **Aerostreet** adalah sebuah website landing page yang dirancang untuk menampilkan dan mempromosikan produk sepatu Aerostreet dengan tampilan yang modern, menarik, dan responsif.
 
@@ -50,6 +50,6 @@ Project ini dibuat sebagai:
 
 - Media promosi produk Aerostreet  
 - Project akhir UKM IDC  
-- Portfolio  
+- Portofolio  
 
 ---
