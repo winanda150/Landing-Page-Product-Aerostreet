@@ -1,4 +1,4 @@
-# 👟 Aerostreet
+# 👟 Aerostreet - Now Everyone Can Buy a Good Shoes
 
 **Aerostreet** adalah sebuah website landing page yang dirancang untuk menampilkan dan mempromosikan produk sepatu Aerostreet dengan tampilan yang modern, menarik, dan responsif.
 
@@ -15,12 +15,13 @@ Project ini dibuat sebagai **Project Akhir dari UKM IDC** dan berhasil meraih pr
 ## 🏆 Prestasi
 
 🥇 **Juara Terbaik Frontend**  
-Dalam **Lomba Hackathon Internal INSTIKI Techfest Vol. III**  
-Diselenggarakan oleh **INSTIKI Developer Club (2026)**  
+Dalam Lomba Hackathon Internal INSTIKI Techfest Vol. III yang diselenggarakan oleh INSTIKI Developer Club (2026) 
 
 ### 📜 Sertifikat
 
-![Sertifikat](sertifikat.png)
+<p align="center">
+  <img src="Sertifikat%20Juara%20Project/Sertifikat%20Juara%20Karya%20Terbaik%20Front%20End%20(IDC%202026).jpg" width="500"/>
+</p>
 
 ---
 
