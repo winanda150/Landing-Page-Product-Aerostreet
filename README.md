@@ -1,8 +1,14 @@
 ## 👟 Aerostreet - Now Everyone Can Buy a Good Shoes
 
-**Aerostreet** adalah sebuah website landing page yang dirancang untuk menampilkan dan mempromosikan produk sepatu Aerostreet dengan tampilan yang modern, menarik, dan responsif.
+**Aerostreet** adalah brand sepatu lokal Indonesia yang dikenal dengan produk berkualitas dengan harga terjangkau, sesuai dengan slogannya *"Now Everyone Can Buy a Good Shoes"*.
 
-Website ini berfokus pada penyampaian informasi produk secara jelas, visual yang menarik, serta pengalaman pengguna yang nyaman untuk meningkatkan daya tarik dan minat pembeli.
+Website yang saya buat merupakan sebuah **landing page produk Aerostreet** yang dirancang untuk menampilkan dan mempromosikan produk secara digital dengan tampilan yang modern, menarik, dan responsif.
+
+Landing page ini berfokus pada:
+- Penyampaian informasi produk secara jelas  
+- Tampilan visual yang menarik  
+- Pengalaman pengguna (user experience) yang nyaman  
+- Meningkatkan daya tarik dan minat pembeli  
 
 ---
 
